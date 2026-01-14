@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips Memilih Nama Domain yang Bagus dan Mudah Diingat | OptimaWeb</title>
+
+    <meta name="description"
+        content="Panduan memilih nama domain yang tepat untuk membangun brand identity yang kuat di internet. Tips branding digital untuk pemula.">
+    <meta name="author" content="OptimaWeb Team">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#ecfdf5',
+                            100: '#d1fae5',
+                            500: '#10b981',
+                            600: '#059669', // Primary Action
+                            700: '#047857',
+                            900: '#064e3b',
+                        }
+                    },
+                    container: {
+                        center: true,
+                        padding: '1rem',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .hide-scroll::-webkit-scrollbar { display: none; }
+            .hide-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+        }
+        /* Custom Styles for Article Content */
+        .article-body h2 { @apply text-2xl font-bold text-slate-900 mt-10 mb-4; }
+        .article-body h3 { @apply text-xl font-bold text-slate-900 mt-8 mb-3; }
+        .article-body p { @apply text-slate-600 leading-relaxed mb-6 text-lg; }
+        .article-body ul { @apply list-disc list-inside mb-6 text-slate-600 space-y-2; }
+        .article-body ol { @apply list-decimal list-inside mb-6 text-slate-600 space-y-2; }
+        .article-body strong { @apply text-slate-800 font-bold; }
+    </style>
+</head>
+
+<body class="bg-white text-slate-800 antialiased selection:bg-brand-100 selection:text-brand-900">
+
+    <nav class="fixed top-6 left-0 right-0 z-50 px-4 transition-all duration-300">
+        <div
+            class="max-w-[1200px] mx-auto bg-white rounded-full shadow-[0_8px_30px_rgb(0,0,0,0.12)] py-3 px-6 md:px-8 flex items-center justify-between border border-slate-100">
+            <a href="index.html" class="flex items-center shrink-0">
+                <img src="img/logo.png" alt="Logo OptimaWeb" class="h-14 w-auto object-contain">
+            </a>
+            <div class="hidden lg:flex items-center gap-8 font-medium text-slate-600 text-[15px]">
+                <a href="index.html" class="hover:text-brand-600 transition-colors relative group">Beranda</a>
+                <a href="layanan.html" class="hover:text-brand-600 transition-colors relative group">Layanan</a>
+                <a href="paket.html" class="hover:text-brand-600 transition-colors relative group">Paket & Harga</a>
+                <a href="portfolio.html" class="hover:text-brand-600 transition-colors relative group">Portofolio</a>
+                <a href="about.html" class="hover:text-brand-600 transition-colors relative group">Tentang Kami</a>
+                <a href="blog.html" class="text-brand-600 font-semibold transition-colors relative group">
+                    Blog
+                    <span class="absolute -bottom-1 left-0 w-full h-0.5 bg-brand-600"></span>
+                </a>
+            </div>
+            <div class="flex items-center gap-4 shrink-0">
+                <a href="https://wa.me/62895639068080" target="_blank"
+                    class="hidden sm:inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-brand-600 text-white font-bold text-sm hover:bg-brand-700 transition shadow-lg shadow-brand-600/30 hover:-translate-y-0.5 transform duration-200">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+                    </svg>
+                    Konsultasi Gratis Sekarang
+                </a>
+
+                <button class="lg:hidden p-2 text-slate-600 hover:text-brand-600">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-40 pb-10 bg-slate-50 border-b border-slate-200">
+        <div class="container max-w-3xl mx-auto px-4 text-center">
+            <div class="flex items-center justify-center gap-2 text-sm text-slate-500 mb-6">
+                <a href="index.html" class="hover:text-brand-600">Home</a>
+                <span>/</span>
+                <a href="blog.html" class="hover:text-brand-600">Blog</a>
+                <span>/</span>
+                <span class="text-brand-600 font-medium">Branding</span>
+            </div>
+
+            <span
+                class="inline-block py-1 px-3 rounded-full bg-brand-100 text-brand-700 text-xs font-bold uppercase tracking-wide mb-4">
+                Identitas Digital
+            </span>
+            <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 leading-tight mb-6">
+                Tips Memilih Nama Domain yang Bagus dan Mudah Diingat
+            </h1>
+
+            <div class="flex items-center justify-center gap-6 text-sm text-slate-500 font-medium">
+                <span class="flex items-center gap-2">
+                    <i data-lucide="calendar" class="w-4 h-4"></i> 25 Des 2025
+                </span>
+                <span class="flex items-center gap-2">
+                    <i data-lucide="clock" class="w-4 h-4"></i> 6 Menit Baca
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <main class="py-16 bg-white">
+        <div class="container max-w-3xl mx-auto px-4">
+
+            <figure class="mb-12 rounded-2xl overflow-hidden shadow-lg">
+                <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&w=1200&q=80"
+                    alt="Memilih Nama Domain Website" class="w-full h-auto object-cover">
+                <figcaption class="text-center text-sm text-slate-500 mt-3 italic">Nama domain adalah alamat digital
+                    pertama yang dilihat pelanggan.</figcaption>
+            </figure>
+
+            <div class="bg-slate-50 border border-slate-200 rounded-xl p-6 mb-10">
+                <div class="flex justify-between items-center cursor-pointer" onclick="toggleToc()">
+                    <h3 class="font-bold text-slate-900 text-lg">Daftar Isi Artikel</h3>
+                    <i data-lucide="chevron-down" id="tocIcon" class="transition-transform duration-300"></i>
+                </div>
+                <ul id="tocList"
+                    class="hidden mt-4 space-y-3 border-t border-slate-200 pt-4 text-slate-600 text-sm font-medium">
+                    <li><a href="#intro" class="hover:text-brand-600 transition flex items-center gap-2"><i
+                                data-lucide="arrow-right" class="w-3 h-3"></i> Pendahuluan</a></li>
+                    <li><a href="#singkat" class="hover:text-brand-600 transition flex items-center gap-2"><i
+                                data-lucide="arrow-right" class="w-3 h-3"></i> 1. Singkat & Mudah Dieja</a></li>
+                    <li><a href="#ekstensi" class="hover:text-brand-600 transition flex items-center gap-2"><i
+                                data-lucide="arrow-right" class="w-3 h-3"></i> 2. Pilih Ekstensi yang Tepat</a></li>
+                    <li><a href="#hindari" class="hover:text-brand-600 transition flex items-center gap-2"><i
+                                data-lucide="arrow-right" class="w-3 h-3"></i> 3. Hindari Angka & Tanda Hubung</a></li>
+                    <li><a href="#faq" class="hover:text-brand-600 transition flex items-center gap-2"><i
+                                data-lucide="arrow-right" class="w-3 h-3"></i> Pertanyaan Umum (FAQ)</a></li>
+                </ul>
+            </div>
+
+            <article class="article-body">
+                <p id="intro" class="text-xl text-slate-500 font-light mb-8">
+                    Nama domain bukan sekadar alamat teknis untuk website Anda. Ia adalah representasi brand, kesan
+                    pertama, dan aset jangka panjang. Salah memilih nama domain bisa membuat pelanggan sulit menemukan
+                    Anda kembali.
+                </p>
+
+                <h2 id="singkat">1. Singkat, Padat, dan Mudah Dieja</h2>
+                <p>
+                    Prinsip utama domain yang baik adalah "Radio Test". Jika Anda menyebutkan nama domain Anda di radio,
+                    apakah pendengar bisa langsung mengetiknya dengan benar tanpa bertanya ejaannya?
+                </p>
+                <p>
+                    Usahakan nama domain di bawah 15 karakter. Semakin pendek, semakin mudah diingat. Contoh:
+                    <em>OptimaWeb.com</em> jauh lebih baik daripada <em>JasaPembuatanWebsiteMurahTerpercaya.com</em>.
+                </p>
+
+                <div class="my-8 p-5 bg-brand-50 border-l-4 border-brand-500 rounded-r-lg">
+                    <span class="block text-xs font-bold text-brand-600 uppercase mb-1">BACA JUGA:</span>
+                    <a href="artikel6.html"
+                        class="text-lg font-bold text-slate-900 hover:text-brand-700 hover:underline">
+                        Mengapa UMKM Wajib Punya Website Sendiri di Era Medsos? →
+                    </a>
+                </div>
+
+                <h2 id="ekstensi">2. Pilih Ekstensi Domain yang Tepat</h2>
+                <p>
+                    <strong>.COM</strong> masih menjadi raja. Ini adalah ekstensi paling populer dan paling dipercaya
+                    secara global. Jika versi .com tersedia, ambillah.
+                </p>
+                <p>
+                    Namun, jika target pasar Anda spesifik di Indonesia, ekstensi <strong>.ID</strong> atau
+                    <strong>.CO.ID</strong> sangat disarankan. Selain menunjukkan identitas lokal, domain ini juga
+                    memberikan sinyal positif untuk SEO lokal di Google Indonesia.
+                </p>
+
+                <blockquote
+                    class="my-10 pl-6 border-l-4 border-slate-900 italic text-xl text-slate-700 font-medium bg-slate-50 py-4 pr-4 rounded-r-lg">
+                    "Nama domain yang baik adalah yang bisa diucapkan sekali dan langsung diingat selamanya, tanpa perlu
+                    dieja ulang."
+                </blockquote>
+
+                <h2 id="hindari">3. Hindari Angka dan Tanda Hubung</h2>
+                <p>
+                    Penggunaan angka (0-9) dan tanda hubung (-) seringkali membingungkan.
+                </p>
+
+                <figure class="my-8 rounded-2xl overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80"
+                        alt="Brainstorming Brand Name" class="w-full h-auto object-cover">
+                    <figcaption class="text-center text-sm text-slate-500 mt-3 italic">Proses brainstorming ide nama
+                        brand dan domain.</figcaption>
+                </figure>
+
+                <p>
+                    Misalnya, jika domain Anda <em>bakso-enak.com</em>, orang mungkin lupa mengetik tanda hubungnya dan
+                    malah masuk ke web kompetitor <em>baksoenak.com</em>. Begitu juga dengan angka, orang akan bingung
+                    apakah ditulis angka "9" atau huruf "sembilan".
+                </p>
+                <p>
+                    Pastikan nama domain Anda unik, mencerminkan brand, dan tidak melanggar hak cipta merek lain.
+                    Gunakan tools seperti <em>Namecheap</em> atau <em>GoDaddy</em> untuk mengecek ketersediaan nama.
+                </p>
+            </article>
+
+            <div id="faq" class="mt-16 pt-10 border-t border-slate-200">
+                <h3 class="text-2xl font-bold text-slate-900 mb-6">Pertanyaan Umum (FAQ)</h3>
+
+                <div class="space-y-4">
+                    <details
+                        class="group bg-slate-50 rounded-xl p-4 open:bg-white open:shadow-md border border-transparent open:border-slate-100 transition-all duration-300">
+                        <summary
+                            class="flex justify-between items-center font-bold cursor-pointer list-none text-slate-800">
+                            Berapa harga domain per tahun?
+                            <span class="transition-transform group-open:rotate-180">
+                                <i data-lucide="chevron-down"></i>
+                            </span>
+                        </summary>
+                        <div class="text-slate-600 mt-3 text-sm leading-relaxed border-t border-slate-100 pt-3">
+                            Harga bervariasi tergantung ekstensi. Domain .com biasanya sekitar Rp 150.000 - Rp 200.000
+                            per tahun. Domain .id bisa lebih mahal atau lebih murah tergantung promo registrar.
+                        </div>
+                    </details>
+
+                    <details
+                        class="group bg-slate-50 rounded-xl p-4 open:bg-white open:shadow-md border border-transparent open:border-slate-100 transition-all duration-300">
+                        <summary
+                            class="flex justify-between items-center font-bold cursor-pointer list-none text-slate-800">
+                            Apa bedanya .com dan .co.id?
+                            <span class="transition-transform group-open:rotate-180">
+                                <i data-lucide="chevron-down"></i>
+                            </span>
+                        </summary>
+                        <div class="text-slate-600 mt-3 text-sm leading-relaxed border-t border-slate-100 pt-3">
+                            .COM adalah domain komersial global (umum). .CO.ID khusus untuk badan usaha di Indonesia dan
+                            memerlukan syarat legalitas (seperti SIUP/NIB) untuk mendaftarkannya, sehingga lebih
+                            terpercaya.
+                        </div>
+                    </details>
+
+                    <details
+                        class="group bg-slate-50 rounded-xl p-4 open:bg-white open:shadow-md border border-transparent open:border-slate-100 transition-all duration-300">
+                        <summary
+                            class="flex justify-between items-center font-bold cursor-pointer list-none text-slate-800">
+                            Bisakah ganti nama domain nanti?
+                            <span class="transition-transform group-open:rotate-180">
+                                <i data-lucide="chevron-down"></i>
+                            </span>
+                        </summary>
+                        <div class="text-slate-600 mt-3 text-sm leading-relaxed border-t border-slate-100 pt-3">
+                            Secara teknis bisa, tetapi tidak disarankan karena Anda akan kehilangan branding dan ranking
+                            SEO yang sudah dibangun sebelumnya. Sebaiknya pikirkan matang-matang sejak awal.
+                        </div>
+                    </details>
+                </div>
+            </div>
+
+            <div
+                class="mt-12 bg-white border border-slate-200 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center gap-6 shadow-sm">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80"
+                    alt="Dina Kusuma" class="w-20 h-20 rounded-full object-cover ring-4 ring-brand-50">
+                <div class="text-center md:text-left">
+                    <p class="text-xs font-bold text-brand-600 uppercase tracking-wide mb-1">Ditulis Oleh</p>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2">Dina Kusuma</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed">
+                        Brand Strategist di OptimaWeb. Membantu bisnis menemukan identitas unik mereka di dunia digital,
+                        mulai dari pemilihan nama hingga visual branding.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-10 flex items-center justify-center md:justify-start gap-4 border-t border-slate-200 pt-8">
+                <span class="text-sm font-bold text-slate-900">Bagikan:</span>
+                <a href="#"
+                    class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-blue-600 hover:text-white transition duration-300">
+                    <i data-lucide="facebook" class="w-5 h-5"></i>
+                </a>
+                <a href="#"
+                    class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-sky-500 hover:text-white transition duration-300">
+                    <i data-lucide="twitter" class="w-5 h-5"></i>
+                </a>
+                <a href="#"
+                    class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-green-500 hover:text-white transition duration-300">
+                    <i data-lucide="message-circle" class="w-5 h-5"></i>
+                </a>
+                <a href="#"
+                    class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-slate-800 hover:text-white transition duration-300">
+                    <i data-lucide="link" class="w-5 h-5"></i>
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <section class="py-20 bg-slate-50 border-t border-slate-200">
+        <div class="container max-w-7xl mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-10 text-center">Artikel Terkait Lainnya</h2>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <a href="artikel6.html"
+                    class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition duration-300 flex flex-col h-full">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=600&q=80"
+                            class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="text-xs text-brand-600 font-bold mb-2 uppercase">Bisnis</div>
+                        <h4 class="font-bold text-slate-900 mb-2 group-hover:text-brand-600 transition">Mengapa UMKM
+                            Wajib Punya Website Sendiri?</h4>
+                        <p class="text-xs text-slate-500 mt-auto">28 Des 2025 • 8 Menit Baca</p>
+                    </div>
+                </a>
+
+                <a href="artikel8.html"
+                    class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition duration-300 flex flex-col h-full">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80"
+                            class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="text-xs text-brand-600 font-bold mb-2 uppercase">Technical</div>
+                        <h4 class="font-bold text-slate-900 mb-2 group-hover:text-brand-600 transition">Pentingnya
+                            Kecepatan Website untuk Konversi</h4>
+                        <p class="text-xs text-slate-500 mt-auto">20 Des 2025 • 5 Menit Baca</p>
+                    </div>
+                </a>
+
+                <a href="artikel9.html"
+                    class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition duration-300 flex flex-col h-full">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=600&q=80"
+                            class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="text-xs text-brand-600 font-bold mb-2 uppercase">Security</div>
+                        <h4 class="font-bold text-slate-900 mb-2 group-hover:text-brand-600 transition">Amankan Website
+                            dari Serangan Hacker</h4>
+                        <p class="text-xs text-slate-500 mt-auto">15 Des 2025 • 7 Menit Baca</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white border-t border-slate-200 pt-16 pb-8">
+        <div class="container max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+                <div class="col-span-2 lg:col-span-1">
+                    <a href="index.html" class="inline-block mb-4">
+                        <img src="img/logo.png" alt="Logo OptimaWeb" class="h-12 w-auto object-contain">
+                    </a>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-4">
+                        Membantu bisnis lokal bertransformasi ke era digital dengan website berkualitas tinggi.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-slate-900 mb-4">Layanan</h4>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li><a href="#" class="hover:text-brand-600">Jasa Web Company</a></li>
+                        <li><a href="#" class="hover:text-brand-600">Jasa Web Toko</a></li>
+                        <li><a href="#" class="hover:text-brand-600">Jasa Web Sekolah</a></li>
+                        <li><a href="#" class="hover:text-brand-600">Jasa SEO</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-slate-900 mb-4">Perusahaan</h4>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li><a href="about.html" class="hover:text-brand-600">Tentang Kami</a></li>
+                        <li><a href="portfolio.html" class="hover:text-brand-600">Portfolio</a></li>
+                        <li><a href="#" class="hover:text-brand-600">Karir</a></li>
+                        <li><a href="#" class="hover:text-brand-600">Kontak</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-slate-900 mb-4">Dukungan</h4>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li><a href="#" class="hover:text-brand-600">Help Center</a></li>
+                        <li><a href="#" class="hover:text-brand-600">Tutorial</a></li>
+                        <li><a href="#" class="hover:text-brand-600">Cek Status</a></li>
+                        <li><a href="#" class="hover:text-brand-600">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="col-span-2 lg:col-span-1">
+                    <h4 class="font-bold text-slate-900 mb-4">Newsletter</h4>
+                    <p class="text-sm text-slate-500 mb-4">Dapatkan tips bisnis digital gratis.</p>
+                    <div class="flex flex-col gap-2">
+                        <input type="email" placeholder="Alamat Email"
+                            class="px-4 py-2 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-600">
+                        <button
+                            class="bg-slate-900 text-white font-medium py-2 rounded-lg hover:bg-slate-800 transition">Langganan</button>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="border-t border-slate-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
+                <p>&copy; 2026 OptimaWeb. All rights reserved.</p>
+                <div class="flex gap-6"><a href="#" class="hover:text-brand-600">Privacy Policy</a><a href="#"
+                        class="hover:text-brand-600">Terms of Service</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col items-center gap-4">
+
+        <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" id="scrollTop"
+            class="bg-slate-800 text-white p-3 rounded-full shadow-lg hover:bg-slate-700 transition-all duration-300 transform opacity-0 translate-y-10 pointer-events-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18">
+                </path>
+            </svg>
+        </button>
+
+        <a href="https://wa.me/62895639068080" target="_blank"
+            class="bg-green-500 text-white p-3.5 rounded-full shadow-lg hover:bg-green-600 transition-transform hover:-translate-y-1 z-10">
+            <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                    d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+            </svg>
+        </a>
+
+    </div>
+
+    <script>
+        const scrollTopBtn = document.getElementById('scrollTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollTopBtn.classList.remove('opacity-0', 'translate-y-10', 'pointer-events-none');
+            } else {
+                scrollTopBtn.classList.add('opacity-0', 'translate-y-10', 'pointer-events-none');
+            }
+        });
+
+        // TOC TOGGLE LOGIC
+        function toggleToc() {
+            const list = document.getElementById('tocList');
+            const icon = document.getElementById('tocIcon');
+            if (list.classList.contains('hidden')) {
+                list.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                list.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        // Initialize Icons
+        lucide.createIcons();
+    </script>
+
+</body>
+
+</html>
