@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami | OptimaWeb</title>
+
+    <meta name="description"
+        content="Mengenal OptimaWeb lebih dekat. Partner digital terpercaya yang berdedikasi membantu UMKM dan bisnis lokal go digital.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        // Palette: Emerald (Professional Green)
+                        brand: {
+                            50: '#ecfdf5',
+                            100: '#d1fae5',
+                            500: '#10b981',
+                            600: '#059669', // Primary Action
+                            700: '#047857',
+                            900: '#064e3b',
+                        }
+                    },
+                    container: {
+                        center: true,
+                        padding: '1rem',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .hide-scroll::-webkit-scrollbar { display: none; }
+            .hide-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+        }
+        section { content-visibility: auto; }
+    </style>
+</head>
+
+<body class="bg-white text-slate-800 antialiased selection:bg-brand-100 selection:text-brand-900">
+
+    <nav class="fixed top-6 left-0 right-0 z-50 px-4 transition-all duration-300">
+        <div
+            class="max-w-[1200px] mx-auto bg-white rounded-full shadow-[0_8px_30px_rgb(0,0,0,0.12)] py-3 px-6 md:px-8 flex items-center justify-between border border-slate-100">
+
+            <a href="index.html" class="flex items-center shrink-0">
+                <img src="img/logo.png" alt="Logo OptimaWeb" class="h-14 w-auto object-contain">
+            </a>
+
+            <div class="hidden lg:flex items-center gap-8 font-medium text-slate-600 text-[15px]">
+                <a href="index.html" class="hover:text-brand-600 transition-colors relative group">
+                    Beranda
+                    <span
+                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-600 transition-all group-hover:w-full"></span>
+                </a>
+                <a href="layanan.html" class="hover:text-brand-600 transition-colors relative group">
+                    Layanan
+                    <span
+                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-600 transition-all group-hover:w-full"></span>
+                </a>
+                <a href="paket.html" class="hover:text-brand-600 transition-colors relative group">
+                    Paket & Harga
+                    <span
+                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-600 transition-all group-hover:w-full"></span>
+                </a>
+                <a href="portfolio.html" class="hover:text-brand-600 transition-colors relative group">
+                    Portofolio
+                    <span
+                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-600 transition-all group-hover:w-full"></span>
+                </a>
+                <a href="about.html" class="text-brand-600 font-semibold transition-colors relative group">
+                    Tentang Kami
+                    <span class="absolute -bottom-1 left-0 w-full h-0.5 bg-brand-600"></span>
+                </a>
+                <a href="index.html#blog" class="hover:text-brand-600 transition-colors relative group">
+                    Blog
+                    <span
+                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-600 transition-all group-hover:w-full"></span>
+                </a>
+            </div>
+
+            <div class="flex items-center gap-4 shrink-0">
+                <a href="#kontak"
+                    class="hidden sm:inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-brand-600 text-white font-bold text-sm hover:bg-brand-700 transition shadow-lg shadow-brand-600/30 hover:-translate-y-0.5 transform duration-200">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+                    </svg>
+                    Konsultasi Gratis Sekarang
+                </a>
+
+                <button class="lg:hidden p-2 text-slate-600 hover:text-brand-600">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-40 pb-20 bg-slate-50 border-b border-slate-200">
+        <div class="container max-w-4xl mx-auto px-4 text-center">
+            <span
+                class="inline-block py-1 px-3 rounded-full bg-brand-100 text-brand-700 text-xs font-bold uppercase tracking-wide mb-6">
+                Tentang OptimaWeb
+            </span>
+            <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight mb-6">
+                Kami Membangun Jembatan <br> Menuju <span class="text-brand-600">Dunia Digital</span>
+            </h1>
+            <p class="text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto">
+                Lebih dari sekadar agensi website, kami adalah mitra strategis yang berdedikasi membantu bisnis lokal
+                tumbuh dan bersaing di era digital.
+            </p>
+        </div>
+    </header>
+
+    <section class="py-24 bg-white">
+        <div class="container max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        class="rounded-2xl w-full h-64 object-cover shadow-lg translate-y-8" alt="Team working">
+                    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        class="rounded-2xl w-full h-64 object-cover shadow-lg" alt="Office meeting">
+                </div>
+
+                <div>
+                    <h2 class="text-3xl font-bold text-slate-900 mb-6">Berawal dari Sebuah Misi Sederhana</h2>
+                    <div class="space-y-6 text-slate-600 leading-relaxed">
+                        <p>
+                            OptimaWeb didirikan pada tahun 2020, di tengah pesatnya perubahan teknologi. Kami melihat
+                            banyak pemilik bisnis hebat yang kesulitan mengembangkan usaha mereka karena belum memiliki
+                            kehadiran online yang kuat.
+                        </p>
+                        <p>
+                            Kami percaya bahwa setiap bisnis, sekecil apapun, berhak mendapatkan akses ke teknologi web
+                            terbaik tanpa harus mengeluarkan biaya yang tidak masuk akal.
+                        </p>
+                        <p>
+                            Hari ini, kami bangga telah membantu ratusan klien dari berbagai industri—mulai dari
+                            kuliner, fashion, hingga properti—untuk mencapai potensi maksimal mereka melalui website
+                            yang cepat, aman, dan efektif.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-8 mt-10 pt-10 border-t border-slate-100">
+                        <div>
+                            <span class="block text-3xl font-extrabold text-brand-600">5+</span>
+                            <span class="text-sm text-slate-500 font-medium">Tahun Pengalaman</span>
+                        </div>
+                        <div>
+                            <span class="block text-3xl font-extrabold text-brand-600">500+</span>
+                            <span class="text-sm text-slate-500 font-medium">Proyek Selesai</span>
+                        </div>
+                        <div>
+                            <span class="block text-3xl font-extrabold text-brand-600">98%</span>
+                            <span class="text-sm text-slate-500 font-medium">Klien Puas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-brand-50 border-y border-brand-100">
+        <div class="container max-w-7xl mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Nilai yang Kami Pegang</h2>
+                <p class="text-slate-600">Prinsip kerja yang membuat kami terus dipercaya oleh klien.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-brand-100 text-center">
+                    <div
+                        class="w-16 h-16 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 mx-auto mb-6">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Kejujuran & Transparansi</h3>
+                    <p class="text-slate-600 text-sm">Tidak ada biaya tersembunyi. Kami menjelaskan spesifikasi teknis
+                        dengan bahasa yang mudah dipahami.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-brand-100 text-center">
+                    <div
+                        class="w-16 h-16 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 mx-auto mb-6">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Kecepatan & Kualitas</h3>
+                    <p class="text-slate-600 text-sm">Kami menghargai waktu Anda. Website dikerjakan dengan efisien
+                        tanpa mengorbankan kualitas kode.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-brand-100 text-center">
+                    <div
+                        class="w-16 h-16 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 mx-auto mb-6">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Dukungan Berkelanjutan</h3>
+                    <p class="text-slate-600 text-sm">Hubungan kami tidak berakhir saat website selesai. Kami siap
+                        membantu maintenance jangka panjang.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white">
+        <div class="container max-w-7xl mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Tim di Balik Layar</h2>
+                <p class="text-slate-600">Para profesional yang siap mewujudkan ide-ide cemerlang Anda.</p>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="group">
+                    <div class="rounded-2xl overflow-hidden mb-4 relative">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition duration-500"
+                            alt="CEO">
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900">Rizky Pratama</h3>
+                    <p class="text-sm text-brand-600 font-medium">Founder & Lead Developer</p>
+                </div>
+                <div class="group">
+                    <div class="rounded-2xl overflow-hidden mb-4 relative">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition duration-500"
+                            alt="Designer">
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900">Sarah Wijaya</h3>
+                    <p class="text-sm text-brand-600 font-medium">UI/UX Designer</p>
+                </div>
+                <div class="group">
+                    <div class="rounded-2xl overflow-hidden mb-4 relative">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition duration-500"
+                            alt="SEO Specialist">
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900">Budi Santoso</h3>
+                    <p class="text-sm text-brand-600 font-medium">Digital Marketer & SEO</p>
+                </div>
+                <div class="group">
+                    <div class="rounded-2xl overflow-hidden mb-4 relative">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition duration-500"
+                            alt="Project Manager">
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900">Diana Putri</h3>
+                    <p class="text-sm text-brand-600 font-medium">Project Manager</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white border-t border-slate-100">
+        <div class="container max-w-7xl mx-auto px-4">
+            <div class="bg-slate-900 rounded-3xl p-10 md:p-16 text-center shadow-2xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Siap Bekerja Sama dengan Kami?</h2>
+                <p class="text-slate-300 text-lg mb-8 max-w-2xl mx-auto">
+                    Jangan ragu untuk menyapa. Kami senang mendengar ide bisnis Anda dan mencari cara terbaik untuk
+                    membantunya tumbuh.
+                </p>
+                <a href="#kontak"
+                    class="inline-flex items-center gap-2 bg-brand-600 text-white font-bold px-8 py-4 rounded-xl hover:bg-brand-500 transition shadow-lg transform hover:-translate-y-1">
+                    <span>Hubungi Kami</span>
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white border-t border-slate-200 pt-16 pb-8">
+        <div class="container max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+                <div class="col-span-2 lg:col-span-1">
+                    <a href="index.html" class="inline-block mb-4">
+                        <img src="img/logo.png" alt="Logo OptimaWeb" class="h-12 w-auto object-contain">
+                    </a>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-4">
+                        Membantu bisnis lokal bertransformasi ke era digital dengan website berkualitas tinggi.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-slate-900 mb-4">Layanan</h4>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li><a href="#" class="hover:text-brand-600">Jasa Web Company</a></li>
+                        <li><a href="#" class="hover:text-brand-600">Jasa Web Toko</a></li>
+                        <li><a href="#" class="hover:text-brand-600">Jasa Web Sekolah</a></li>
+                        <li><a href="#" class="hover:text-brand-600">Jasa SEO</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-slate-900 mb-4">Perusahaan</h4>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li><a href="#" class="hover:text-brand-600">Tentang Kami</a></li>
+                        <li><a href="#" class="hover:text-brand-600">Portfolio</a></li>
+                        <li><a href="#" class="hover:text-brand-600">Karir</a></li>
+                        <li><a href="#" class="hover:text-brand-600">Kontak</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-slate-900 mb-4">Dukungan</h4>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li><a href="#" class="hover:text-brand-600">Help Center</a></li>
+                        <li><a href="#" class="hover:text-brand-600">Tutorial</a></li>
+                        <li><a href="#" class="hover:text-brand-600">Cek Status</a></li>
+                        <li><a href="#" class="hover:text-brand-600">Sitemap</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-span-2 lg:col-span-1">
+                    <h4 class="font-bold text-slate-900 mb-4">Newsletter</h4>
+                    <p class="text-sm text-slate-500 mb-4">Dapatkan tips bisnis digital gratis.</p>
+                    <div class="flex flex-col gap-2">
+                        <input type="email" placeholder="Alamat Email"
+                            class="px-4 py-2 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-600">
+                        <button
+                            class="bg-slate-900 text-white font-medium py-2 rounded-lg hover:bg-slate-800 transition">Langganan</button>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="border-t border-slate-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
+                <p>&copy; 2026 OptimaWeb. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-brand-600">Privacy Policy</a>
+                    <a href="#" class="hover:text-brand-600">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
