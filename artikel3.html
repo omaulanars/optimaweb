@@ -4,18 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cara Membaca Data Pengunjung Website dengan Benar | OptimaWeb</title>
 
+    <title>Cara Membaca Data Pengunjung Website dengan Benar | OptimaWeb</title>
     <meta name="description"
-        content="Pahami siapa pengunjung website Anda dan optimalkan strategi pemasaran berdasarkan data yang akurat. Panduan lengkap membaca analitik website.">
-    <meta name="author" content="OptimaWeb Team">
+        content="Panduan lengkap cara membaca data analitik website (Google Analytics). Pahami metrik penting seperti Bounce Rate, Traffic Source, dan Conversion Rate.">
+    <meta name="keywords"
+        content="cara baca google analytics, data pengunjung website, bounce rate adalah, traffic source website, analisis data website">
+    <meta name="author" content="Hendra Wijaya">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://optimaweb-nine.vercel.app/artikel3.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://optimaweb-nine.vercel.app/artikel3.html">
+    <meta property="og:title" content="Cara Membaca Data Pengunjung Website dengan Benar">
+    <meta property="og:description"
+        content="Jangan cuma punya data, tapi pahami artinya untuk strategi bisnis yang lebih jitu.">
+    <meta property="og:image" content="https://optimaweb-nine.vercel.app/img/hero.webp">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <meta name="theme-color" content="#059669">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Cara Membaca Data Pengunjung Website dengan Benar",
+      "image": "https://optimaweb-nine.vercel.app/img/hero.webp",
+      "author": {
+        "@type": "Person",
+        "name": "Hendra Wijaya"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "OptimaWeb",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://optimaweb-nine.vercel.app/img/logo.webp"
+        }
+      },
+      "datePublished": "2026-01-08",
+      "description": "Panduan praktis memahami metrik utama dalam analitik website."
+    }
+    </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
     <script src="https://unpkg.com/lucide@latest"></script>
-
     <script src="https://cdn.tailwindcss.com"></script>
 
     <script>
@@ -49,7 +87,7 @@
             .hide-scroll::-webkit-scrollbar { display: none; }
             .hide-scroll { -ms-overflow-style: none; scrollbar-width: none; }
         }
-        /* Custom Styles for Article Content */
+        /* Article Typography */
         .article-body h2 { @apply text-2xl font-bold text-slate-900 mt-10 mb-4; }
         .article-body h3 { @apply text-xl font-bold text-slate-900 mt-8 mb-3; }
         .article-body p { @apply text-slate-600 leading-relaxed mb-6 text-lg; }
@@ -67,17 +105,39 @@
             <a href="index.html" class="flex items-center shrink-0">
                 <img src="img/logo.webp" alt="Logo OptimaWeb" class="h-14 w-auto object-contain">
             </a>
+
             <div class="hidden lg:flex items-center gap-8 font-medium text-slate-600 text-[15px]">
-                <a href="index.html" class="hover:text-brand-600 transition-colors relative group">Beranda</a>
-                <a href="layanan.html" class="hover:text-brand-600 transition-colors relative group">Layanan</a>
-                <a href="paket.html" class="hover:text-brand-600 transition-colors relative group">Paket & Harga</a>
-                <a href="portfolio.html" class="hover:text-brand-600 transition-colors relative group">Portofolio</a>
-                <a href="about.html" class="hover:text-brand-600 transition-colors relative group">Tentang Kami</a>
+                <a href="index.html" class="hover:text-brand-600 transition-colors relative group">
+                    Beranda
+                    <span
+                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-600 transition-all group-hover:w-full"></span>
+                </a>
+                <a href="about.html" class="hover:text-brand-600 transition-colors relative group">
+                    Tentang Kami
+                    <span
+                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-600 transition-all group-hover:w-full"></span>
+                </a>
+                <a href="layanan.html" class="hover:text-brand-600 transition-colors relative group">
+                    Layanan
+                    <span
+                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-600 transition-all group-hover:w-full"></span>
+                </a>
+                <a href="paket.html" class="hover:text-brand-600 transition-colors relative group">
+                    Paket & Harga
+                    <span
+                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-600 transition-all group-hover:w-full"></span>
+                </a>
+                <a href="portfolio.html" class="hover:text-brand-600 transition-colors relative group">
+                    Portofolio
+                    <span
+                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-600 transition-all group-hover:w-full"></span>
+                </a>
                 <a href="blog.html" class="text-brand-600 font-semibold transition-colors relative group">
                     Blog
                     <span class="absolute -bottom-1 left-0 w-full h-0.5 bg-brand-600"></span>
                 </a>
             </div>
+
             <div class="flex items-center gap-4 shrink-0">
                 <a href="https://wa.me/62895639068080" target="_blank"
                     class="hidden sm:inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-brand-600 text-white font-bold text-sm hover:bg-brand-700 transition shadow-lg shadow-brand-600/30 hover:-translate-y-0.5 transform duration-200">
@@ -88,12 +148,30 @@
                     Konsultasi Gratis Sekarang
                 </a>
 
-                <button class="lg:hidden p-2 text-slate-600 hover:text-brand-600">
+                <button id="mobile-menu-btn" class="lg:hidden p-2 text-slate-600 hover:text-brand-600 transition">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M4 6h16M4 12h16m-7 6h7"></path>
                     </svg>
                 </button>
+            </div>
+
+            <div id="mobile-menu"
+                class="hidden lg:hidden absolute top-full left-0 w-full bg-white border-t border-slate-100 rounded-b-3xl shadow-xl overflow-hidden mt-2 p-4 flex flex-col gap-4 z-50">
+                <a href="index.html"
+                    class="text-slate-600 font-medium px-4 py-2 hover:bg-slate-50 rounded-lg">Beranda</a>
+                <a href="about.html" class="text-slate-600 font-medium px-4 py-2 hover:bg-slate-50 rounded-lg">Tentang
+                    Kami</a>
+                <a href="layanan.html"
+                    class="text-slate-600 font-medium px-4 py-2 hover:bg-slate-50 rounded-lg">Layanan</a>
+                <a href="paket.html" class="text-slate-600 font-medium px-4 py-2 hover:bg-slate-50 rounded-lg">Paket &
+                    Harga</a>
+                <a href="portfolio.html"
+                    class="text-slate-600 font-medium px-4 py-2 hover:bg-slate-50 rounded-lg">Portofolio</a>
+                <a href="blog.html" class="text-brand-600 font-bold px-4 py-2 bg-brand-50 rounded-lg">Blog</a>
+                <a href="https://wa.me/62895639068080" target="_blank"
+                    class="text-center bg-brand-600 text-white font-bold px-4 py-3 rounded-xl shadow-lg mt-2">Konsultasi
+                    Gratis</a>
             </div>
         </div>
     </nav>
@@ -110,7 +188,7 @@
 
             <span
                 class="inline-block py-1 px-3 rounded-full bg-brand-100 text-brand-700 text-xs font-bold uppercase tracking-wide mb-4">
-                Data & Wawasan
+                Data Driven
             </span>
             <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 leading-tight mb-6">
                 Cara Membaca Data Pengunjung Website dengan Benar
@@ -131,14 +209,14 @@
         <div class="container max-w-3xl mx-auto px-4">
 
             <figure class="mb-12 rounded-2xl overflow-hidden shadow-lg">
-                <img src="img/hero.webp" alt="Analisis Data Website" class="w-full h-auto object-cover">
-                <figcaption class="text-center text-sm text-slate-500 mt-3 italic">Dashboard analitik memberikan wawasan
-                    berharga tentang perilaku pengunjung.</figcaption>
+                <img src="img/hero.webp" alt="Dashboard Analytics Data" class="w-full h-auto object-cover">
+                <figcaption class="text-center text-sm text-slate-500 mt-3 italic">Data analitik adalah kompas bagi
+                    bisnis online Anda.</figcaption>
             </figure>
 
             <div class="bg-slate-50 border border-slate-200 rounded-xl p-6 mb-10">
                 <div class="flex justify-between items-center cursor-pointer" onclick="toggleToc()">
-                    <h3 class="font-bold text-slate-900 text-lg">Daftar Isi Artikel</h3>
+                    <h2 class="font-bold text-slate-900 text-lg m-0 p-0">Daftar Isi Artikel</h2>
                     <i data-lucide="chevron-down" id="tocIcon" class="transition-transform duration-300"></i>
                 </div>
                 <ul id="tocList"
@@ -148,9 +226,9 @@
                     <li><a href="#users" class="hover:text-brand-600 transition flex items-center gap-2"><i
                                 data-lucide="arrow-right" class="w-3 h-3"></i> 1. Users vs Sessions</a></li>
                     <li><a href="#bounce" class="hover:text-brand-600 transition flex items-center gap-2"><i
-                                data-lucide="arrow-right" class="w-3 h-3"></i> 2. Memahami Bounce Rate</a></li>
+                                data-lucide="arrow-right" class="w-3 h-3"></i> 2. Bounce Rate</a></li>
                     <li><a href="#source" class="hover:text-brand-600 transition flex items-center gap-2"><i
-                                data-lucide="arrow-right" class="w-3 h-3"></i> 3. Sumber Traffic (Acquisition)</a></li>
+                                data-lucide="arrow-right" class="w-3 h-3"></i> 3. Traffic Source</a></li>
                     <li><a href="#faq" class="hover:text-brand-600 transition flex items-center gap-2"><i
                                 data-lucide="arrow-right" class="w-3 h-3"></i> Pertanyaan Umum (FAQ)</a></li>
                 </ul>
@@ -159,104 +237,76 @@
             <article class="article-body">
                 <p id="intro" class="text-xl text-slate-500 font-light mb-8">
                     Memiliki website tanpa melihat datanya ibarat menyetir mobil dengan mata tertutup. Anda mungkin
-                    bergerak, tapi tidak tahu arah. Data pengunjung memberi tahu Anda siapa mereka, dari mana asalnya,
-                    dan apa yang mereka sukai.
+                    bergerak, tapi Anda tidak tahu arah dan seberapa cepat Anda melaju. Google Analytics adalah alat
+                    powerful, tapi seringkali membingungkan bagi pemula.
                 </p>
 
-                <h2 id="users">1. Pahami Perbedaan Users dan Sessions</h2>
+                <h2 id="users">1. Users vs Sessions (Pengguna vs Sesi)</h2>
                 <p>
-                    Saat membuka Google Analytics, dua angka pertama yang sering dilihat adalah <strong>Users</strong>
-                    (Pengguna) dan <strong>Sessions</strong> (Sesi). Jangan sampai tertukar!
+                    Ini adalah dua metrik paling dasar. <strong>Users</strong> adalah jumlah orang unik yang mengunjungi
+                    website Anda. Sedangkan <strong>Sessions</strong> adalah jumlah kunjungan yang terjadi.
                 </p>
-                <ul>
-                    <li><strong>Users:</strong> Jumlah individu unik yang mengunjungi website Anda. Satu orang dihitung
-                        satu, meskipun berkunjung berkali-kali.</li>
-                    <li><strong>Sessions:</strong> Jumlah total kunjungan. Jika satu orang mengunjungi website Anda
-                        pagi, siang, dan sore hari, itu dihitung sebagai 1 User dengan 3 Sessions.</li>
-                </ul>
+                <p>
+                    Satu orang (User) bisa melakukan beberapa kunjungan (Sessions). Jika angka Sessions jauh lebih
+                    tinggi dari Users, itu pertanda bagus! Artinya, pengunjung Anda kembali lagi ke website (loyalitas
+                    tinggi).
+                </p>
 
                 <div class="my-8 p-5 bg-brand-50 border-l-4 border-brand-500 rounded-r-lg">
                     <span class="block text-xs font-bold text-brand-600 uppercase mb-1">BACA JUGA:</span>
-                    <a href="artikel2.html"
+                    <a href="artikel8.html"
                         class="text-lg font-bold text-slate-900 hover:text-brand-700 hover:underline">
-                        Panduan Memulai Toko Online untuk Pemula di Tahun 2026 →
+                        Pentingnya Kecepatan Website untuk Konversi Penjualan →
                     </a>
                 </div>
 
-                <h2 id="bounce">2. Memahami Bounce Rate (Rasio Pentalan)</h2>
+                <h2 id="bounce">2. Bounce Rate (Rasio Pentalan)</h2>
                 <p>
-                    <em>Bounce Rate</em> adalah persentase pengunjung yang datang ke website Anda lalu langsung pergi
-                    tanpa membuka halaman lain. Apakah Bounce Rate tinggi itu buruk? Belum tentu.
+                    Bounce Rate adalah persentase pengunjung yang datang ke website lalu langsung pergi tanpa mengklik
+                    apa pun atau membuka halaman lain.
                 </p>
                 <p>
-                    Jika website Anda adalah portal berita atau blog, Bounce Rate tinggi (60-80%) itu wajar karena orang
-                    datang, membaca, lalu pergi. Namun, jika Anda punya Toko Online, Bounce Rate tinggi berarti
-                    pengunjung tidak tertarik melihat produk Anda.
+                    Apakah Bounce Rate tinggi itu buruk? Tergantung. Untuk blog, 70% masih wajar karena orang membaca
+                    lalu pergi. Tapi untuk Toko Online, angka di atas 50% berarti ada masalah: mungkin loading lambat,
+                    desain jelek, atau konten tidak relevan.
                 </p>
 
                 <blockquote
                     class="my-10 pl-6 border-l-4 border-slate-900 italic text-xl text-slate-700 font-medium bg-slate-50 py-4 pr-4 rounded-r-lg">
-                    "Data bukanlah tentang angka, melainkan tentang cerita di balik perilaku manusia yang mengunjungi
-                    bisnis digital Anda."
+                    "Data tidak pernah berbohong. Jika pengunjung langsung pergi, jangan salahkan pengunjungnya,
+                    perbaiki websitenya."
                 </blockquote>
 
-                <h2 id="source">3. Sumber Traffic (Acquisition)</h2>
+                <h2 id="source">3. Traffic Source (Sumber Trafik)</h2>
                 <p>
-                    Mengetahui dari mana pengunjung berasal sangat penting untuk mengevaluasi strategi marketing.
-                    Biasanya dibagi menjadi:
+                    Dari mana pengunjung Anda berasal?
                 </p>
-
-                <figure class="my-8 rounded-2xl overflow-hidden shadow-lg">
-                    <img src="img/6art.webp" alt="Sumber Traffic Website" class="w-full h-auto object-cover">
-                    <figcaption class="text-center text-sm text-slate-500 mt-3 italic">Grafik sumber traffic: Organic,
-                        Direct, Social, dan Referral.</figcaption>
-                </figure>
-
                 <ul>
-                    <li><strong>Organic Search:</strong> Pengunjung dari mesin pencari (Google). Tandanya SEO Anda
-                        berhasil.</li>
-                    <li><strong>Direct:</strong> Pengunjung yang mengetik langsung alamat website Anda. Biasanya
-                        pelanggan setia.</li>
-                    <li><strong>Social:</strong> Pengunjung dari media sosial (Instagram, TikTok, Facebook).</li>
-                    <li><strong>Referral:</strong> Pengunjung yang datang dari link di website lain.</li>
+                    <li><strong>Organic Search:</strong> Dari Google (SEO).</li>
+                    <li><strong>Social:</strong> Dari Instagram, Facebook, TikTok.</li>
+                    <li><strong>Direct:</strong> Mengetik alamat web langsung.</li>
+                    <li><strong>Referral:</strong> Dari link di website lain.</li>
                 </ul>
                 <p>
-                    Dengan memahami data ini, Anda bisa memutuskan apakah harus lebih fokus di SEO, atau justru
-                    memperbanyak konten di media sosial.
+                    Mengetahui sumber trafik membantu Anda menentukan di mana harus memfokuskan promosi. Jika trafik
+                    medsos tinggi, perbanyak konten di sana.
                 </p>
             </article>
 
             <div id="faq" class="mt-16 pt-10 border-t border-slate-200">
-                <h3 class="text-2xl font-bold text-slate-900 mb-6">Pertanyaan Umum (FAQ)</h3>
+                <h2 class="text-2xl font-bold text-slate-900 mb-6">Pertanyaan Umum (FAQ)</h2>
 
                 <div class="space-y-4">
                     <details
                         class="group bg-slate-50 rounded-xl p-4 open:bg-white open:shadow-md border border-transparent open:border-slate-100 transition-all duration-300">
                         <summary
                             class="flex justify-between items-center font-bold cursor-pointer list-none text-slate-800">
-                            Tools apa yang gratis untuk cek data?
-                            <span class="transition-transform group-open:rotate-180">
-                                <i data-lucide="chevron-down"></i>
-                            </span>
+                            Apakah Google Analytics gratis?
+                            <span class="transition-transform group-open:rotate-180"><i
+                                    data-lucide="chevron-down"></i></span>
                         </summary>
                         <div class="text-slate-600 mt-3 text-sm leading-relaxed border-t border-slate-100 pt-3">
-                            Google Analytics (GA4) dan Google Search Console adalah standar industri yang gratis dan
-                            sangat powerful untuk memulai.
-                        </div>
-                    </details>
-
-                    <details
-                        class="group bg-slate-50 rounded-xl p-4 open:bg-white open:shadow-md border border-transparent open:border-slate-100 transition-all duration-300">
-                        <summary
-                            class="flex justify-between items-center font-bold cursor-pointer list-none text-slate-800">
-                            Seberapa sering harus cek data?
-                            <span class="transition-transform group-open:rotate-180">
-                                <i data-lucide="chevron-down"></i>
-                            </span>
-                        </summary>
-                        <div class="text-slate-600 mt-3 text-sm leading-relaxed border-t border-slate-100 pt-3">
-                            Untuk pemula, cek seminggu sekali sudah cukup untuk melihat tren (mingguan). Jangan terlalu
-                            obsesif mengecek setiap jam karena data butuh waktu untuk terkumpul.
+                            Ya, Google Analytics (GA4) 100% gratis digunakan untuk website skala kecil hingga menengah.
                         </div>
                     </details>
 
@@ -265,13 +315,26 @@
                         <summary
                             class="flex justify-between items-center font-bold cursor-pointer list-none text-slate-800">
                             Apa itu Conversion Rate?
-                            <span class="transition-transform group-open:rotate-180">
-                                <i data-lucide="chevron-down"></i>
-                            </span>
+                            <span class="transition-transform group-open:rotate-180"><i
+                                    data-lucide="chevron-down"></i></span>
                         </summary>
                         <div class="text-slate-600 mt-3 text-sm leading-relaxed border-t border-slate-100 pt-3">
-                            Persentase pengunjung yang melakukan tindakan yang Anda inginkan (misal: membeli produk atau
-                            mengisi formulir kontak).
+                            Persentase pengunjung yang melakukan tindakan yang diinginkan (membeli produk, mengisi
+                            formulir, atau klik tombol WA). Ini adalah metrik terpenting untuk penjualan.
+                        </div>
+                    </details>
+
+                    <details
+                        class="group bg-slate-50 rounded-xl p-4 open:bg-white open:shadow-md border border-transparent open:border-slate-100 transition-all duration-300">
+                        <summary
+                            class="flex justify-between items-center font-bold cursor-pointer list-none text-slate-800">
+                            Berapa lama data muncul?
+                            <span class="transition-transform group-open:rotate-180"><i
+                                    data-lucide="chevron-down"></i></span>
+                        </summary>
+                        <div class="text-slate-600 mt-3 text-sm leading-relaxed border-t border-slate-100 pt-3">
+                            Data Realtime muncul seketika. Namun untuk laporan lengkap dan akurat, biasanya membutuhkan
+                            waktu pemrosesan 24-48 jam.
                         </div>
                     </details>
                 </div>
@@ -279,14 +342,14 @@
 
             <div
                 class="mt-12 bg-white border border-slate-200 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center gap-6 shadow-sm">
-                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=200&q=80"
-                    alt="Rizky Pratama" class="w-20 h-20 rounded-full object-cover ring-4 ring-brand-50">
+                <img src="https://images.unsplash.com/photo-1537511446984-935f663eb1f4?auto=format&fit=crop&w=200&q=80"
+                    alt="Hendra Wijaya" class="w-20 h-20 rounded-full object-cover ring-4 ring-brand-50">
                 <div class="text-center md:text-left">
                     <p class="text-xs font-bold text-brand-600 uppercase tracking-wide mb-1">Ditulis Oleh</p>
-                    <h4 class="text-lg font-bold text-slate-900 mb-2">Rizky Pratama</h4>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Hendra Wijaya</h3>
                     <p class="text-slate-500 text-sm leading-relaxed">
-                        Data Analyst & SEO Specialist di OptimaWeb. Senang mengulik angka dan mengubahnya menjadi
-                        strategi pertumbuhan bisnis yang nyata.
+                        Data Analyst di OptimaWeb. Ahli dalam menerjemahkan angka-angka rumit menjadi strategi bisnis
+                        yang mudah dipahami dan dieksekusi.
                     </p>
                 </div>
             </div>
@@ -294,21 +357,17 @@
             <div class="mt-10 flex items-center justify-center md:justify-start gap-4 border-t border-slate-200 pt-8">
                 <span class="text-sm font-bold text-slate-900">Bagikan:</span>
                 <a href="#"
-                    class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-blue-600 hover:text-white transition duration-300">
-                    <i data-lucide="facebook" class="w-5 h-5"></i>
-                </a>
+                    class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-blue-600 hover:text-white transition duration-300"><i
+                        data-lucide="facebook" class="w-5 h-5"></i></a>
                 <a href="#"
-                    class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-sky-500 hover:text-white transition duration-300">
-                    <i data-lucide="twitter" class="w-5 h-5"></i>
-                </a>
+                    class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-sky-500 hover:text-white transition duration-300"><i
+                        data-lucide="twitter" class="w-5 h-5"></i></a>
                 <a href="#"
-                    class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-green-500 hover:text-white transition duration-300">
-                    <i data-lucide="message-circle" class="w-5 h-5"></i>
-                </a>
+                    class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-green-500 hover:text-white transition duration-300"><i
+                        data-lucide="message-circle" class="w-5 h-5"></i></a>
                 <a href="#"
-                    class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-slate-800 hover:text-white transition duration-300">
-                    <i data-lucide="link" class="w-5 h-5"></i>
-                </a>
+                    class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-slate-800 hover:text-white transition duration-300"><i
+                        data-lucide="link" class="w-5 h-5"></i></a>
             </div>
 
         </div>
@@ -327,27 +386,27 @@
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <div class="text-xs text-brand-600 font-bold mb-2 uppercase">SEO</div>
-                        <h4 class="font-bold text-slate-900 mb-2 group-hover:text-brand-600 transition">Cara
-                            Meningkatkan SEO Website ke Halaman 1 Google</h4>
+                        <h3 class="font-bold text-slate-900 mb-2 group-hover:text-brand-600 transition">Cara
+                            Meningkatkan SEO Website</h3>
                         <p class="text-xs text-slate-500 mt-auto">12 Jan 2026 • 5 Menit Baca</p>
                     </div>
                 </a>
 
-                <a href="artikel2.html"
+                <a href="artikel5.html"
                     class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition duration-300 flex flex-col h-full">
                     <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?auto=format&fit=crop&w=600&q=80"
+                        <img src="https://images.unsplash.com/photo-1509343256512-d77a5cb3791b?auto=format&fit=crop&w=600&q=80"
                             class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
-                        <div class="text-xs text-brand-600 font-bold mb-2 uppercase">E-Commerce</div>
-                        <h4 class="font-bold text-slate-900 mb-2 group-hover:text-brand-600 transition">Panduan Memulai
-                            Toko Online untuk Pemula</h4>
-                        <p class="text-xs text-slate-500 mt-auto">10 Jan 2026 • 7 Menit Baca</p>
+                        <div class="text-xs text-brand-600 font-bold mb-2 uppercase">Design</div>
+                        <h3 class="font-bold text-slate-900 mb-2 group-hover:text-brand-600 transition">Tren Desain
+                            Website 2026</h3>
+                        <p class="text-xs text-slate-500 mt-auto">01 Jan 2026 • 5 Menit Baca</p>
                     </div>
                 </a>
 
-                <a href="#"
+                <a href="artikel4.html"
                     class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition duration-300 flex flex-col h-full">
                     <div class="h-48 overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=600&q=80"
@@ -355,8 +414,8 @@
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <div class="text-xs text-brand-600 font-bold mb-2 uppercase">Marketing</div>
-                        <h4 class="font-bold text-slate-900 mb-2 group-hover:text-brand-600 transition">Strategi Content
-                            Marketing untuk Brand Awareness</h4>
+                        <h3 class="font-bold text-slate-900 mb-2 group-hover:text-brand-600 transition">Strategi Content
+                            Marketing 2026</h3>
                         <p class="text-xs text-slate-500 mt-auto">05 Jan 2026 • 6 Menit Baca</p>
                     </div>
                 </a>
@@ -375,9 +434,8 @@
                         Membantu bisnis lokal bertransformasi ke era digital dengan website berkualitas tinggi.
                     </p>
                 </div>
-
                 <div>
-                    <h4 class="font-bold text-slate-900 mb-4">Layanan</h4>
+                    <h3 class="font-bold text-slate-900 mb-4 text-base">Layanan</h3>
                     <ul class="space-y-2 text-sm text-slate-600">
                         <li><a href="#" class="hover:text-brand-600">Jasa Web Company</a></li>
                         <li><a href="#" class="hover:text-brand-600">Jasa Web Toko</a></li>
@@ -385,19 +443,17 @@
                         <li><a href="#" class="hover:text-brand-600">Jasa SEO</a></li>
                     </ul>
                 </div>
-
                 <div>
-                    <h4 class="font-bold text-slate-900 mb-4">Perusahaan</h4>
+                    <h3 class="font-bold text-slate-900 mb-4 text-base">Perusahaan</h3>
                     <ul class="space-y-2 text-sm text-slate-600">
                         <li><a href="about.html" class="hover:text-brand-600">Tentang Kami</a></li>
                         <li><a href="portfolio.html" class="hover:text-brand-600">Portfolio</a></li>
                         <li><a href="#" class="hover:text-brand-600">Karir</a></li>
-                        <li><a href="#" class="hover:text-brand-600">Kontak</a></li>
+                        <li><a href="#kontak" class="hover:text-brand-600">Kontak</a></li>
                     </ul>
                 </div>
-
                 <div>
-                    <h4 class="font-bold text-slate-900 mb-4">Dukungan</h4>
+                    <h3 class="font-bold text-slate-900 mb-4 text-base">Dukungan</h3>
                     <ul class="space-y-2 text-sm text-slate-600">
                         <li><a href="#" class="hover:text-brand-600">Help Center</a></li>
                         <li><a href="#" class="hover:text-brand-600">Tutorial</a></li>
@@ -405,32 +461,51 @@
                         <li><a href="#" class="hover:text-brand-600">Sitemap</a></li>
                     </ul>
                 </div>
-
                 <div class="col-span-2 lg:col-span-1">
-                    <h4 class="font-bold text-slate-900 mb-4">Newsletter</h4>
-                    <p class="text-sm text-slate-500 mb-4">Dapatkan tips bisnis digital gratis.</p>
-                    <div class="flex flex-col gap-2">
-                        <input type="email" placeholder="Alamat Email"
-                            class="px-4 py-2 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-600">
-                        <button
-                            class="bg-slate-900 text-white font-medium py-2 rounded-lg hover:bg-slate-800 transition">Langganan</button>
-                    </div>
+                    <h3 class="font-bold text-slate-900 mb-4 text-base">Hubungi Kami</h3>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-brand-600 shrink-0 mt-0.5" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                </path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            <span>Malang, Jawa Timur<br>Indonesia</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-brand-600 shrink-0" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                                </path>
+                            </svg>
+                            <span>+62 895-6390-68080</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-brand-600 shrink-0" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                            <span>info@optimaweb.id</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
-
             <div
                 class="border-t border-slate-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
                 <p>&copy; 2026 OptimaWeb. All rights reserved.</p>
-                <div class="flex gap-6">
-                    <a href="#" class="hover:text-brand-600">Privacy Policy</a>
-                    <a href="#" class="hover:text-brand-600">Terms of Service</a>
-                </div>
+                <div class="flex gap-6"><a href="#" class="hover:text-brand-600">Privacy Policy</a><a href="#"
+                        class="hover:text-brand-600">Terms of Service</a></div>
             </div>
         </div>
     </footer>
 
     <div class="fixed bottom-6 right-6 z-50 flex flex-col items-center gap-4">
-
         <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" id="scrollTop"
             class="bg-slate-800 text-white p-3 rounded-full shadow-lg hover:bg-slate-700 transition-all duration-300 transform opacity-0 translate-y-10 pointer-events-none">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -446,11 +521,24 @@
                     d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
             </svg>
         </a>
-
     </div>
 
     <script>
-        // SCROLL TOP LOGIC
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        if (btn && menu) {
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+
+            menu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                });
+            });
+        }
+
         const scrollTopBtn = document.getElementById('scrollTop');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 300) {
@@ -473,7 +561,6 @@
             }
         }
 
-        // Initialize Icons
         lucide.createIcons();
     </script>
 

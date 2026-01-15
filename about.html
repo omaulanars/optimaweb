@@ -4,15 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tentang Kami | OptimaWeb</title>
 
+    <title>Tentang Kami | OptimaWeb - Partner Digital Terpercaya</title>
     <meta name="description"
-        content="Mengenal OptimaWeb lebih dekat. Partner digital terpercaya yang berdedikasi membantu UMKM dan bisnis lokal go digital.">
+        content="Mengenal OptimaWeb lebih dekat. Kami adalah tim developer dan digital marketer yang berdedikasi membantu UMKM Indonesia go digital dengan website profesional.">
+    <meta name="keywords"
+        content="tentang optimaweb, profil perusahaan web developer, tim web developer malang, visi misi optimaweb, jasa web terpercaya">
+    <meta name="author" content="OptimaWeb">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://optimaweb-nine.vercel.app/about.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://optimaweb-nine.vercel.app/about.html">
+    <meta property="og:title" content="Tentang OptimaWeb | Partner Digital Bisnis Anda">
+    <meta property="og:description" content="Mengenal tim di balik OptimaWeb dan dedikasi kami untuk UMKM Indonesia.">
+    <meta property="og:image" content="https://optimaweb-nine.vercel.app/img/about.webp">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <meta name="theme-color" content="#059669">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "Tentang OptimaWeb",
+      "description": "Profil perusahaan OptimaWeb, penyedia jasa pembuatan website profesional.",
+      "url": "https://optimaweb-nine.vercel.app/about.html",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "OptimaWeb",
+        "foundingDate": "2020",
+        "url": "https://optimaweb-nine.vercel.app",
+        "logo": "https://optimaweb-nine.vercel.app/img/logo.webp",
+        "sameAs": [
+          "https://instagram.com/optimaweb",
+          "https://facebook.com/optimaweb"
+        ]
+      }
+    }
+    </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
     <script src="https://cdn.tailwindcss.com"></script>
 
     <script>
@@ -23,7 +60,6 @@
                         sans: ['Inter', 'sans-serif'],
                     },
                     colors: {
-                        // Palette: Emerald (Professional Green)
                         brand: {
                             50: '#ecfdf5',
                             100: '#d1fae5',
@@ -47,7 +83,6 @@
             .hide-scroll::-webkit-scrollbar { display: none; }
             .hide-scroll { -ms-overflow-style: none; scrollbar-width: none; }
         }
-        section { content-visibility: auto; }
     </style>
 </head>
 
@@ -56,7 +91,6 @@
     <nav class="fixed top-6 left-0 right-0 z-50 px-4 transition-all duration-300">
         <div
             class="max-w-[1200px] mx-auto bg-white rounded-full shadow-[0_8px_30px_rgb(0,0,0,0.12)] py-3 px-6 md:px-8 flex items-center justify-between border border-slate-100">
-
             <a href="index.html" class="flex items-center shrink-0">
                 <img src="img/logo.webp" alt="Logo OptimaWeb" class="h-14 w-auto object-contain">
             </a>
@@ -66,6 +100,10 @@
                     Beranda
                     <span
                         class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-600 transition-all group-hover:w-full"></span>
+                </a>
+                <a href="about.html" class="text-brand-600 font-semibold transition-colors relative group">
+                    Tentang Kami
+                    <span class="absolute -bottom-1 left-0 w-full h-0.5 bg-brand-600"></span>
                 </a>
                 <a href="layanan.html" class="hover:text-brand-600 transition-colors relative group">
                     Layanan
@@ -82,10 +120,6 @@
                     <span
                         class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-600 transition-all group-hover:w-full"></span>
                 </a>
-                <a href="about.html" class="text-brand-600 font-semibold transition-colors relative group">
-                    Tentang Kami
-                    <span class="absolute -bottom-1 left-0 w-full h-0.5 bg-brand-600"></span>
-                </a>
                 <a href="blog.html" class="hover:text-brand-600 transition-colors relative group">
                     Blog
                     <span
@@ -100,15 +134,32 @@
                         <path
                             d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
                     </svg>
-                    Konsultasi Gratis Sekarang
+                    Konsultasi Gratis
                 </a>
 
-                <button class="lg:hidden p-2 text-slate-600 hover:text-brand-600">
+                <button id="mobile-menu-btn" class="lg:hidden p-2 text-slate-600 hover:text-brand-600 transition">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M4 6h16M4 12h16m-7 6h7"></path>
                     </svg>
                 </button>
+            </div>
+
+            <div id="mobile-menu"
+                class="hidden lg:hidden absolute top-full left-0 w-full bg-white border-t border-slate-100 rounded-b-3xl shadow-xl overflow-hidden mt-2 p-4 flex flex-col gap-4 z-50">
+                <a href="index.html"
+                    class="text-slate-600 font-medium px-4 py-2 hover:bg-slate-50 rounded-lg">Beranda</a>
+                <a href="about.html" class="text-brand-600 font-bold px-4 py-2 bg-brand-50 rounded-lg">Tentang Kami</a>
+                <a href="layanan.html"
+                    class="text-slate-600 font-medium px-4 py-2 hover:bg-slate-50 rounded-lg">Layanan</a>
+                <a href="paket.html" class="text-slate-600 font-medium px-4 py-2 hover:bg-slate-50 rounded-lg">Paket &
+                    Harga</a>
+                <a href="portfolio.html"
+                    class="text-slate-600 font-medium px-4 py-2 hover:bg-slate-50 rounded-lg">Portofolio</a>
+                <a href="blog.html" class="text-slate-600 font-medium px-4 py-2 hover:bg-slate-50 rounded-lg">Blog</a>
+                <a href="https://wa.me/62895639068080" target="_blank"
+                    class="text-center bg-brand-600 text-white font-bold px-4 py-3 rounded-xl shadow-lg mt-2">Konsultasi
+                    Gratis</a>
             </div>
         </div>
     </nav>
@@ -117,58 +168,44 @@
         <div class="container max-w-4xl mx-auto px-4 text-center">
             <span
                 class="inline-block py-1 px-3 rounded-full bg-brand-100 text-brand-700 text-xs font-bold uppercase tracking-wide mb-6">
-                Tentang OptimaWeb
+                Mengenal OptimaWeb
             </span>
-            <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight mb-6">
-                Kami Membangun Jembatan <br> Menuju <span class="text-brand-600">Dunia Digital</span>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight mb-6">
+                Lebih dari Sekadar <br> <span class="text-brand-600">Jasa Pembuatan Website</span>
             </h1>
             <p class="text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto">
-                Lebih dari sekadar agensi website, kami adalah mitra strategis yang berdedikasi membantu bisnis lokal
-                tumbuh dan bersaing di era digital.
+                Kami adalah mitra pertumbuhan bisnis Anda di era digital. Memadukan teknologi terkini, desain estetik,
+                dan strategi marketing yang terukur.
             </p>
         </div>
     </header>
 
     <section class="py-24 bg-white">
         <div class="container max-w-7xl mx-auto px-4">
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
-                <div class="grid grid-cols-2 gap-4">
-                    <img src="img/about.webp" class="rounded-2xl w-full h-64 object-cover shadow-lg translate-y-8"
-                        alt="Team working">
-                    <img src="img/about1.webp" class="rounded-2xl w-full h-64 object-cover shadow-lg"
-                        alt="Office meeting">
+            <div class="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+                <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+                    <img src="img/about.webp" alt="Tim OptimaWeb bekerja" class="w-full h-auto object-cover"
+                        fetchpriority="high">
                 </div>
-
                 <div>
-                    <h2 class="text-3xl font-bold text-slate-900 mb-6">Berawal dari Sebuah Misi Sederhana</h2>
-                    <div class="space-y-6 text-slate-600 leading-relaxed">
-                        <p>
-                            OptimaWeb didirikan pada tahun 2020, di tengah pesatnya perubahan teknologi. Kami melihat
-                            banyak pemilik bisnis hebat yang kesulitan mengembangkan usaha mereka karena belum memiliki
-                            kehadiran online yang kuat.
-                        </p>
-                        <p>
-                            Kami percaya bahwa setiap bisnis, sekecil apapun, berhak mendapatkan akses ke teknologi web
-                            terbaik tanpa harus mengeluarkan biaya yang tidak masuk akal.
-                        </p>
-                        <p>
-                            Hari ini, kami bangga telah membantu ratusan klien dari berbagai industri—mulai dari
-                            kuliner, fashion, hingga properti—untuk mencapai potensi maksimal mereka melalui website
-                            yang cepat, aman, dan efektif.
-                        </p>
-                    </div>
+                    <h2 class="text-3xl font-bold text-slate-900 mb-6">Cerita Kami</h2>
+                    <p class="text-slate-600 leading-relaxed mb-6">
+                        Berawal dari kepedulian terhadap banyaknya UMKM di Malang yang memiliki produk luar biasa namun
+                        kesulitan bersaing di ranah digital, OptimaWeb didirikan pada tahun 2020.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed mb-8">
+                        Kami percaya bahwa website berkualitas tinggi tidak harus mahal dan rumit. Misi kami adalah
+                        mendemokratisasi akses teknologi bagi setiap pemilik bisnis, memberikan mereka alat yang setara
+                        dengan perusahaan besar untuk berkembang.
+                    </p>
 
-                    <div class="grid grid-cols-3 gap-8 mt-10 pt-10 border-t border-slate-100">
-                        <div>
-                            <span class="block text-3xl font-extrabold text-brand-600">5+</span>
-                            <span class="text-sm text-slate-500 font-medium">Tahun Pengalaman</span>
-                        </div>
-                        <div>
-                            <span class="block text-3xl font-extrabold text-brand-600">500+</span>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="p-4 bg-slate-50 rounded-xl border border-slate-100">
+                            <span class="block text-3xl font-bold text-brand-600 mb-1">150+</span>
                             <span class="text-sm text-slate-500 font-medium">Proyek Selesai</span>
                         </div>
-                        <div>
-                            <span class="block text-3xl font-extrabold text-brand-600">98%</span>
+                        <div class="p-4 bg-slate-50 rounded-xl border border-slate-100">
+                            <span class="block text-3xl font-bold text-brand-600 mb-1">98%</span>
                             <span class="text-sm text-slate-500 font-medium">Klien Puas</span>
                         </div>
                     </div>
@@ -177,121 +214,65 @@
         </div>
     </section>
 
-    <section class="py-24 bg-brand-50 border-y border-brand-100">
+    <section class="py-24 bg-slate-50 border-t border-slate-200">
         <div class="container max-w-7xl mx-auto px-4">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl font-bold text-slate-900 mb-4">Nilai yang Kami Pegang</h2>
-                <p class="text-slate-600">Prinsip kerja yang membuat kami terus dipercaya oleh klien.</p>
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Mengapa Memilih Kami?</h2>
+                <p class="text-slate-600">Nilai-nilai yang kami pegang teguh dalam setiap proyek.</p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-brand-100 text-center">
-                    <div
-                        class="w-16 h-16 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 mx-auto mb-6">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Kejujuran & Transparansi</h3>
-                    <p class="text-slate-600 text-sm">Tidak ada biaya tersembunyi. Kami menjelaskan spesifikasi teknis
-                        dengan bahasa yang mudah dipahami.</p>
-                </div>
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-brand-100 text-center">
-                    <div
-                        class="w-16 h-16 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 mx-auto mb-6">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+                    <div class="w-12 h-12 rounded-lg bg-brand-100 text-brand-600 flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Kecepatan & Kualitas</h3>
-                    <p class="text-slate-600 text-sm">Kami menghargai waktu Anda. Website dikerjakan dengan efisien
-                        tanpa mengorbankan kualitas kode.</p>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Berorientasi Hasil</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Kami tidak hanya membuat website cantik, tapi
+                        website yang menghasilkan konversi dan penjualan.</p>
                 </div>
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-brand-100 text-center">
-                    <div
-                        class="w-16 h-16 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 mx-auto mb-6">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+                    <div class="w-12 h-12 rounded-lg bg-brand-100 text-brand-600 flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z">
+                                d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Teknologi Terkini</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Selalu update dengan standar web terbaru (HTML5,
+                        Tailwind, Modern SEO) agar website Anda tidak ketinggalan zaman.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+                    <div class="w-12 h-12 rounded-lg bg-brand-100 text-brand-600 flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
                             </path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Dukungan Berkelanjutan</h3>
-                    <p class="text-slate-600 text-sm">Hubungan kami tidak berakhir saat website selesai. Kami siap
-                        membantu maintenance jangka panjang.</p>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Tim Profesional</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Didukung oleh desainer, developer, dan SEO
+                        specialist yang berpengalaman di bidangnya.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="py-24 bg-white">
-        <div class="container max-w-7xl mx-auto px-4">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl font-bold text-slate-900 mb-4">Tim di Balik Layar</h2>
-                <p class="text-slate-600">Para profesional yang siap mewujudkan ide-ide cemerlang Anda.</p>
-            </div>
-
-            <div class="grid md:grid-cols-4 gap-8">
-                <div class="group">
-                    <div class="rounded-2xl overflow-hidden mb-4 relative">
-                        <img src="img/person1.webp"
-                            class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition duration-500"
-                            alt="CEO">
-                    </div>
-                    <h3 class="text-lg font-bold text-slate-900">Rizky Pratama</h3>
-                    <p class="text-sm text-brand-600 font-medium">Founder & Lead Developer</p>
-                </div>
-                <div class="group">
-                    <div class="rounded-2xl overflow-hidden mb-4 relative">
-                        <img src="img/person2.webp"
-                            class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition duration-500"
-                            alt="Designer">
-                    </div>
-                    <h3 class="text-lg font-bold text-slate-900">Sarah Wijaya</h3>
-                    <p class="text-sm text-brand-600 font-medium">UI/UX Designer</p>
-                </div>
-                <div class="group">
-                    <div class="rounded-2xl overflow-hidden mb-4 relative">
-                        <img src="img/person3.webp"
-                            class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition duration-500"
-                            alt="SEO Specialist">
-                    </div>
-                    <h3 class="text-lg font-bold text-slate-900">Budi Santoso</h3>
-                    <p class="text-sm text-brand-600 font-medium">Digital Marketer & SEO</p>
-                </div>
-                <div class="group">
-                    <div class="rounded-2xl overflow-hidden mb-4 relative">
-                        <img src="img/person4.webp"
-                            class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition duration-500"
-                            alt="Project Manager">
-                    </div>
-                    <h3 class="text-lg font-bold text-slate-900">Diana Putri</h3>
-                    <p class="text-sm text-brand-600 font-medium">Project Manager</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-20 bg-white border-t border-slate-100">
-        <div class="container max-w-7xl mx-auto px-4">
-            <div class="bg-slate-900 rounded-3xl p-10 md:p-16 text-center shadow-2xl">
-                <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Siap Bekerja Sama dengan Kami?</h2>
-                <p class="text-slate-300 text-lg mb-8 max-w-2xl mx-auto">
-                    Jangan ragu untuk menyapa. Kami senang mendengar ide bisnis Anda dan mencari cara terbaik untuk
-                    membantunya tumbuh.
-                </p>
-                <a href="https://wa.me/62895639068080" target="_blank"
-                    class="inline-flex items-center gap-2 bg-brand-600 text-white font-bold px-8 py-4 rounded-xl hover:bg-brand-500 transition shadow-lg transform hover:-translate-y-1">
-                    <span>Hubungi Kami</span>
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M17 8l4 4m0 0l-4 4m4-4H3">
-                        </path>
-                    </svg>
-                </a>
-            </div>
+        <div class="container max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-slate-900 mb-8">Siap Mengembangkan Bisnis Anda?</h2>
+            <p class="text-slate-600 max-w-2xl mx-auto mb-10 text-lg">Jangan biarkan kompetitor mendahului Anda.
+                Konsultasikan kebutuhan digital Anda bersama tim ahli kami sekarang.</p>
+            <a href="https://wa.me/62895639068080" target="_blank"
+                class="inline-flex items-center gap-2 bg-brand-600 text-white font-bold px-8 py-4 rounded-full hover:bg-brand-700 transition shadow-lg shadow-brand-600/30 hover:-translate-y-1">
+                <span>Hubungi Kami via WhatsApp</span>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+                </svg>
+            </a>
         </div>
     </section>
 
@@ -306,9 +287,8 @@
                         Membantu bisnis lokal bertransformasi ke era digital dengan website berkualitas tinggi.
                     </p>
                 </div>
-
                 <div>
-                    <h4 class="font-bold text-slate-900 mb-4">Layanan</h4>
+                    <h3 class="font-bold text-slate-900 mb-4 text-base">Layanan</h3>
                     <ul class="space-y-2 text-sm text-slate-600">
                         <li><a href="#" class="hover:text-brand-600">Jasa Web Company</a></li>
                         <li><a href="#" class="hover:text-brand-600">Jasa Web Toko</a></li>
@@ -316,19 +296,17 @@
                         <li><a href="#" class="hover:text-brand-600">Jasa SEO</a></li>
                     </ul>
                 </div>
-
                 <div>
-                    <h4 class="font-bold text-slate-900 mb-4">Perusahaan</h4>
+                    <h3 class="font-bold text-slate-900 mb-4 text-base">Perusahaan</h3>
                     <ul class="space-y-2 text-sm text-slate-600">
-                        <li><a href="#" class="hover:text-brand-600">Tentang Kami</a></li>
-                        <li><a href="#" class="hover:text-brand-600">Portfolio</a></li>
+                        <li><a href="about.html" class="hover:text-brand-600">Tentang Kami</a></li>
+                        <li><a href="portfolio.html" class="hover:text-brand-600">Portfolio</a></li>
                         <li><a href="#" class="hover:text-brand-600">Karir</a></li>
-                        <li><a href="#" class="hover:text-brand-600">Kontak</a></li>
+                        <li><a href="#kontak" class="hover:text-brand-600">Kontak</a></li>
                     </ul>
                 </div>
-
                 <div>
-                    <h4 class="font-bold text-slate-900 mb-4">Dukungan</h4>
+                    <h3 class="font-bold text-slate-900 mb-4 text-base">Dukungan</h3>
                     <ul class="space-y-2 text-sm text-slate-600">
                         <li><a href="#" class="hover:text-brand-600">Help Center</a></li>
                         <li><a href="#" class="hover:text-brand-600">Tutorial</a></li>
@@ -336,32 +314,51 @@
                         <li><a href="#" class="hover:text-brand-600">Sitemap</a></li>
                     </ul>
                 </div>
-
                 <div class="col-span-2 lg:col-span-1">
-                    <h4 class="font-bold text-slate-900 mb-4">Newsletter</h4>
-                    <p class="text-sm text-slate-500 mb-4">Dapatkan tips bisnis digital gratis.</p>
-                    <div class="flex flex-col gap-2">
-                        <input type="email" placeholder="Alamat Email"
-                            class="px-4 py-2 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-600">
-                        <button
-                            class="bg-slate-900 text-white font-medium py-2 rounded-lg hover:bg-slate-800 transition">Langganan</button>
-                    </div>
+                    <h3 class="font-bold text-slate-900 mb-4 text-base">Hubungi Kami</h3>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-brand-600 shrink-0 mt-0.5" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                </path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            <span>Malang, Jawa Timur<br>Indonesia</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-brand-600 shrink-0" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                                </path>
+                            </svg>
+                            <span>+62 895-6390-68080</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-brand-600 shrink-0" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                            <span>info@optimaweb.id</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
-
             <div
                 class="border-t border-slate-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
                 <p>&copy; 2026 OptimaWeb. All rights reserved.</p>
-                <div class="flex gap-6">
-                    <a href="#" class="hover:text-brand-600">Privacy Policy</a>
-                    <a href="#" class="hover:text-brand-600">Terms of Service</a>
-                </div>
+                <div class="flex gap-6"><a href="#" class="hover:text-brand-600">Privacy Policy</a><a href="#"
+                        class="hover:text-brand-600">Terms of Service</a></div>
             </div>
         </div>
     </footer>
 
     <div class="fixed bottom-6 right-6 z-50 flex flex-col items-center gap-4">
-
         <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" id="scrollTop"
             class="bg-slate-800 text-white p-3 rounded-full shadow-lg hover:bg-slate-700 transition-all duration-300 transform opacity-0 translate-y-10 pointer-events-none">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -377,10 +374,24 @@
                     d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
             </svg>
         </a>
-
     </div>
 
     <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        if (btn && menu) {
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+
+            menu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                });
+            });
+        }
+
         const scrollTopBtn = document.getElementById('scrollTop');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 300) {
